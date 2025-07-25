@@ -24,6 +24,14 @@
     <script src="js/main.js" defer></script>
 </head>
 <body>
+<div id="navbar"></div>
+<script>
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+        });
+</script>
 <h1>유튜브 클론 메인</h1>
 <div id="videoList">
     <!-- 영상 카드 -->
