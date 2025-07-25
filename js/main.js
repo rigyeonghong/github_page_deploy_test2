@@ -2,7 +2,7 @@ function goToVideo(id) {
     // video.html?videoId=... 페이지로 이동
     // 실제로 videoId가 유튜브 ID라면, id 대신 그걸 넣어야 함
     // 여기선 단순 숫자 예시
-    location.href = `video.html?videoId=${id}`;
+    location.href = `./pages/video.html?videoId=${id}`;
 }
 
 // 1. 강제 새로고침 (캐시 무시)
